@@ -41,15 +41,28 @@ public class Serviceimpl implements CurdService {
 
 	}
 
-	
 	public void testdeletecurd(Integer id) {
 		repo.deleteById(id);
 	}
 
-
 	public List<String> getNames() {
-		
+
 		return repo.getNames();
+	}
+
+	public String getNamebyId(Integer id) {
+		return repo.getNamebyId(id);
+
+	}
+
+	public List<String> getmails() {
+		return repo.getmails();
+	}
+
+	
+	public String getMailsbyId(Integer id) {
+		return repo.getMailsbyId(id);
+		
 	}
 
 }

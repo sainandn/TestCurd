@@ -45,10 +45,30 @@ public class CurdController {
 	public void testdeletecurd(@RequestParam("id") Integer id) {
 		serviceobj.testdeletecurd(id);
 	}
-	
-	@GetMapping("/get/query")
+
+	@GetMapping("/get/names")
 	public List<String> getNames() {
 		return serviceobj.getNames();
+	}
+
+	@GetMapping("get/name/{id}")
+	public String getNamebyId(@PathVariable("id") Integer id) {
+
+		return serviceobj.getNamebyId(id);
+
+	}
+
+	@GetMapping("get/mails")
+	public List<String> getmails() {
+		return serviceobj.getmails();
+
+	}
+	
+	@GetMapping("get/mail/{id}")
+	public String getMailsbyId(@PathVariable("id") Integer id) {
+
+		return serviceobj.getMailsbyId(id);
+
 	}
 
 }
