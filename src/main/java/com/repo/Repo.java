@@ -1,11 +1,8 @@
 package com.repo;
 
 import java.util.List;
-
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
-import org.springframework.web.bind.annotation.PathVariable;
-
 import com.dto.CurdDto;
 
 public interface Repo extends JpaRepository<CurdDto, Integer> {

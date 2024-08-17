@@ -70,5 +70,11 @@ public class CurdController {
 		return serviceobj.getMailsbyId(id);
 
 	}
+	
+	public int add (int a,int b) {
+		int z= a+b;
+		return z;
+		
+	}
 
 }
