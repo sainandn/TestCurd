@@ -5,7 +5,7 @@ import com.dto.CurdDto;
 
 public interface CurdService {
 
-	public void savecurd(CurdDto curddto);
+	public CurdDto savecurd(CurdDto curddto);
 
 	public void deletecurd(Integer id);
 

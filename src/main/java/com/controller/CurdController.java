@@ -21,8 +21,10 @@ public class CurdController {
 	CurdService serviceobj;
 
 	@PostMapping("/save")
-	public void savecurd(@RequestBody CurdDto curddto) {
-		serviceobj.savecurd(curddto);
+	public CurdDto savecurd(@RequestBody CurdDto curddto) {
+		CurdDto x =  serviceobj.savecurd(curddto);
+		
+		return x;
 	}
 
 	@DeleteMapping("/delete/{id}")

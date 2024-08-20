@@ -14,8 +14,10 @@ public class Serviceimpl implements CurdService {
 	@Autowired
 	Repo repo;
 
-	public void savecurd(CurdDto curddto) {
-		repo.save(curddto);
+	public CurdDto savecurd(CurdDto curddto) {
+		CurdDto x=  repo.save(curddto);
+		return x;
+		
 	}
 
 	public void deletecurd(Integer id) {
